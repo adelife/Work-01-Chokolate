@@ -5,37 +5,79 @@
     --color-background:#1E1823;
     --color-background-light:#FAFAFA;
 }
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--color-primary);
+    background-color: var(--color-background-light);
+}
 
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+button{
+    font-family: inherit;
+}
+.visually-hidden { /**спрятать єлемент**/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 .logo{
     color:var(--color-primary);
     font-size: 18px;
-        font-style: normal;
         font-weight: 700;
-        line-height: 20px;
-        letter-spacing: -0.54px;
+        line-height: 1.11;
+        letter-spacing: -0.03em;
+        text-transform: uppercase;
 }
-
+.logo-accent{
+    font-style: italic;
+}
 .nav-link{
     color: var(--color-primary);
     cursor: pointer;
+    font-size: 14px;
+    font-style: normal;
+        font-weight: 500;
+        line-height: 1.14;
+        letter-spacing: -0.02;
 }
 .nav-link:hover{
     color: var(--color-brand);
 }
 
 .hero-section{
-    background-color: var(--color-background)
+    background-color: var(--color-background);
 }
 .hero-title{
     color: var(--color-primary-light);
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 1.21;
+    letter-spacing: -0.03;
 }
 .button-primery{
+    font-family: inherit;
     background-color:var(--color-brand);
     color:var(--color-primary-light); 
     border: none;
     border-radius: 100px;
     cursor: pointer;
     padding: 14px 40px;
+    font-weight: 600;
 }
 .button-primery:hover{
     background-color:#FCF1E0;
@@ -47,6 +89,9 @@
     border: 1px solid currentColor;
     border-radius: 100px;
     padding: 14px 40px;
+    line-height: normal;
+    font-weight: 600;
+    line-height: 1.21;
 }
 .hero-button:hover{
     color:var(--color-brand);
@@ -54,9 +99,30 @@
 }
 .hero-scroll-down{
     color:var(--color-primary-light);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.28;
+    letter-spacing: -0.03;
 
 }
 .hero-scroll-down:hover{
     color:var(--color-brand);
 
+}
+/*section- benefits*/
+.Benefits{
+    background-color: var(--color-background);
+}
+.benefits-title{
+    color:var(--color-primary-light);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.22;
+}
+.benefits-text{
+    color:rgba(255, 255, 255, 0.70);
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.02;
+    line-height: 1.22;
 }
